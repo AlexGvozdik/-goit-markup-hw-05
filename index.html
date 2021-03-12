@@ -55,9 +55,18 @@
                 <h1 class="hero-title">
                     ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
                 </h1>
-                <button class="primary-button" type="button">
+                <button class="primary-button" data-modal-open type="button">
                     Заказать услугу
                 </button>
+                <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button class="close-btn-svg-cross" type="button" data-modal-close>
+                            <svg class="svg-cross-icon">
+                                <use href="./img/svg-icon/sprite.svg#icon-cross"></use>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
             </div>
         </section>
         <!-- Секция наши особенности  -->
@@ -412,6 +421,8 @@
             </div>
         </div>
     </footer>
+    <!-- ===========================JAVA-SCRIPT============================= -->
+     <script src="./js/modal.js"></script>
 </body>
 
 </html>
